@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Encode / Decode</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --color-bg: #f8f8fb;
+      --color-surface: #ffffff;
+      --color-border: #e2e2ec;
+      --color-primary: #4f46e5;
+      --color-text: #111827;
+      --color-text-muted: #6b7280;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    }
+    body {
+      font-family: var(--font);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      padding: 48px 56px;
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 600px) {
+      .container { padding: 28px 20px; }
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p, li { font-size: 0.95rem; color: #374151; }
+    p { margin-bottom: 12px; }
+    ul { padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 4px; }
+    strong { color: var(--color-text); }
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+      background: #f1f0ff;
+      padding: 1px 6px;
+      border-radius: 4px;
+      color: var(--color-primary);
+    }
+    .badge {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #065f46;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 32px 0;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Encode / Decode &middot; Chrome Extension &middot; Version 1.0.0</p>
+
+  <p><strong>Encode / Decode does not collect, transmit, or share any of your data.</strong> All processing is performed entirely within your browser's extension popup — no servers, no analytics, no third-party services.</p>
+
+  <div class="badge">&check; 100% client-side processing</div>
+
+  <h2>Data Collection</h2>
+  <p>This extension collects <strong>no data</strong>. The text you enter for encoding or decoding is never sent over the network. It is processed by JavaScript running in the extension popup and is discarded when the popup closes.</p>
+
+  <h2>Permissions</h2>
+  <p>The extension declares a single permission:</p>
+  <ul>
+    <li><strong><code>storage</code></strong> — Used solely to remember your interface language preference (e.g., if you switch from English to French, that choice is saved to <code>chrome.storage.local</code> so the extension opens in French next time). This data is stored locally in your browser and is never transmitted anywhere.</li>
+  </ul>
+
+  <h2>Clipboard</h2>
+  <p>The "Copy" button uses the standard <code>navigator.clipboard.writeText()</code> API. This is a browser-managed capability that requires no special permission in extension popups. No clipboard data is read or transmitted.</p>
+
+  <h2>Third-Party Access</h2>
+  <p>This extension makes no network requests, embeds no third-party scripts, loads no external fonts or resources, and includes no tracking or analytics code.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy is updated, the version number and date at the top will reflect the change. Continued use of the extension constitutes acceptance of the current policy.</p>
+
+  <hr />
+
+  <h2>Data Controller</h2>
+  <p>This extension is provided by an individual developer. If you have questions about this privacy policy, please open an issue on the <a href="https://github.com/eurotools/encode-and-decode-utilities" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</p>
+
+  <div class="footer">
+    Last updated: June 2026
+  </div>
+
+</div>
+</body>
+</html>
